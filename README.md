@@ -32,7 +32,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 
 ### 🚀 How to Run  
 
-# Install dependencies
+**Install dependencies**
   pip install -r requirements.txt
 
 **Run Python analysis**
