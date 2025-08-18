@@ -29,6 +29,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 - Buyer segmentation (NRI vs Non NRI).
 - Buyer wise transactions.
 - Primary vs Secondary transactions.
+- Configuration demand among buyers.
 
 ### 🚀 How to Run  
 
