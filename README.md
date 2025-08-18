@@ -53,14 +53,14 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 
 
 # 📷 **Screenshots**
-<img width="648" height="371" alt="POwer 1" src="https://github.com/user-attachments/assets/a0eaff5e-b4af-4dae-9698-57ffcc60a1da" />
+<img width="1272" height="713" alt="Screenshot 2025-08-18 203421" src="https://github.com/user-attachments/assets/2123a2ba-14de-4cab-b3cb-034a70597b8c" />
+<img width="1266" height="697" alt="Screenshot 2025-08-18 203432" src="https://github.com/user-attachments/assets/e243c548-9c51-4297-a3ff-4cfb91c07611" />
+<img width="1270" height="709" alt="Screenshot 2025-08-18 203438" src="https://github.com/user-attachments/assets/d38a2e0b-90d4-497c-9771-d558f9601066" />
+<img width="1257" height="694" alt="Screenshot 2025-08-18 203455" src="https://github.com/user-attachments/assets/ba0cc5c2-9904-4a5b-b634-3adbdc666417" />
 
-<img width="641" height="353" alt="POwer 2" src="https://github.com/user-attachments/assets/05e34644-0051-4b3f-8ace-9ef7254ab33f" />
 
 
-<img width="649" height="368" alt="POwer 3" src="https://github.com/user-attachments/assets/ce8c6179-29bb-4f18-bff3-cad0c85b8d54" />
 
-<img width="615" height="341" alt="POwer 4" src="https://github.com/user-attachments/assets/51d0787f-c777-41b3-a1b9-cf8009a4dd76" />
 
 ---
 
