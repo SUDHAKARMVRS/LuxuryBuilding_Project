@@ -3,7 +3,7 @@
 
 ---
 
-## 📌 Executive Summary (For Managers)  
+## 📌 Overview
 This project analyzes the **luxury housing market** to uncover sales trends, buyer preferences, and builder performance. Using **Python, SQL, and Power BI**, the project provides **interactive dashboards and insights** that support strategic decision-making.  
 
 ### 🔑 Key Highlights  
