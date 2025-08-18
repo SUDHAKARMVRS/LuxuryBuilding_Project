@@ -47,9 +47,17 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 - Under-construction projects have higher booking conversion vs ready-to-move.
 - NRI and Non NRI both had a equal level of buying percentage.Non NRI slighltly higher sid by 1%.
 
+**Screenshots**
+<img width="648" height="371" alt="POwer 1" src="https://github.com/user-attachments/assets/a0eaff5e-b4af-4dae-9698-57ffcc60a1da" />
+
+<img width="674" height="373" alt="POwer 2" src="https://github.com/user-attachments/assets/aa1ce496-938c-40d9-aeee-40a2d2221640" />
+
+<img width="649" height="368" alt="POwer 3" src="https://github.com/user-attachments/assets/ce8c6179-29bb-4f18-bff3-cad0c85b8d54" />
+
+<img width="615" height="341" alt="POwer 4" src="https://github.com/user-attachments/assets/51d0787f-c777-41b3-a1b9-cf8009a4dd76" />
 
 ---
 
 ## 👨‍💻 Author  
 **Sudhakar M**  
-📧sudhakar.mvrs@gmail.com| 🌐 (https://www.linkedin.com/in/sudhakar-m-657ba787/)  
+📧sudhakar.mvrs@gmail.com| 🌐 (https://www.linkedin.com/in/sudhakar-m-657ba787/) 
