@@ -41,7 +41,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 **Open the Power BI file**  
 `  Lb.pbix`  
 
-📈 **Sample Insights**
+# 📈 **Sample Insights**
 - 60% of revenue comes from top 5 builders.  
 - 5BHK units dominate sales in premium micro-markets.
 - Under-construction projects have higher booking conversion vs ready-to-move.
