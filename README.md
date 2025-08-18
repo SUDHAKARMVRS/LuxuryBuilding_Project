@@ -43,8 +43,10 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 
 📈 **Sample Insights**
 - 60% of revenue comes from top 5 builders.  
-- 3BHK units dominate sales in premium micro-markets.
-- Under-construction projects have higher booking conversion vs ready-to-move.  
+- 5BHK units dominate sales in premium micro-markets.
+- Under-construction projects have higher booking conversion vs ready-to-move.
+- NRI and Non NRI both had a equal level of buying percentage.Non NRI slighltly higher sid by 1%.
+
 
 ---
 
