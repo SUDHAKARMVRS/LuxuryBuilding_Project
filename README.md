@@ -48,7 +48,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 - NRI and Non NRI both had a equal level of buying percentage.Non NRI slighltly higher sid by 1%.
 
 
-# **Screenshots**
+# 📷 **Screenshots**
 <img width="648" height="371" alt="POwer 1" src="https://github.com/user-attachments/assets/a0eaff5e-b4af-4dae-9698-57ffcc60a1da" />
 
 <img width="641" height="353" alt="POwer 2" src="https://github.com/user-attachments/assets/05e34644-0051-4b3f-8ace-9ef7254ab33f" />
