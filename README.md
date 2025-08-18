@@ -51,7 +51,8 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 # **Screenshots**
 <img width="648" height="371" alt="POwer 1" src="https://github.com/user-attachments/assets/a0eaff5e-b4af-4dae-9698-57ffcc60a1da" />
 
-<img width="674" height="373" alt="POwer 2" src="https://github.com/user-attachments/assets/aa1ce496-938c-40d9-aeee-40a2d2221640" />
+<img width="641" height="353" alt="POwer 2" src="https://github.com/user-attachments/assets/05e34644-0051-4b3f-8ace-9ef7254ab33f" />
+
 
 <img width="649" height="368" alt="POwer 3" src="https://github.com/user-attachments/assets/ce8c6179-29bb-4f18-bff3-cad0c85b8d54" />
 
