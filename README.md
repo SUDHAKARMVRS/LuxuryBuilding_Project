@@ -27,8 +27,8 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 ### 📊 Core Analyses  
 - Builder-wise revenue & bookings.  
 - Buyer segmentation (NRI vs Non NRI).
-- 
-- Primary vs Secondary Transactions
+- Buyer wise transactions.
+- Primary vs Secondary transactions.
 
 ### 🚀 How to Run  
 
