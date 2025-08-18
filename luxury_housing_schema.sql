@@ -1,0 +1,23 @@
+CREATE TABLE luxury_house(
+    property_id NVARCHAR(20),
+    micro_market NVARCHAR(25),
+    project_name NVARCHAR(25),
+    developer_name NVARCHAR(100),
+    unit_size_sqft FLOAT CHECK(unit_size_sqft > 0) NOT NULL,
+    configuration NVARCHAR(15),
+    ticket_price_cr FLOAT CHECK(ticket_price_cr > 0) NOT NULL,
+    transaction_type NVARCHAR(15),
+    buyer_type NVARCHAR(15),
+    purchase_quarter NVARCHAR(20),
+    connectivity_score FLOAT,
+    amenity_score FLOAT,
+    possession_status NVARCHAR(25),
+    sales_channel NVARCHAR(25),
+    nri_buyer NVARCHAR(10),
+    locality_infra_score FLOAT,
+    avg_traffic_time_min INT,
+    buyer_comments NVARCHAR(250),
+    quarter_number INT,
+    price_per_sqft FLOAT,
+    booking_flag INT
+);
