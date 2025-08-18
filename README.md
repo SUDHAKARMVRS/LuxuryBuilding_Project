@@ -35,7 +35,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 # Install dependencies
   pip install -r requirements.txt
 
-# Run Python analysis
+**Run Python analysis**
   python Lux_Hou_Sal.py
   
 **Open the Power BI file**  
