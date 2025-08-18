@@ -31,15 +31,18 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 - Primary vs Secondary transactions.
 - Configuration demand among buyers.
 
-### 🚀 How to Run  
+## 🚀 How to Run  
 
 **Install dependencies**
+
   pip install -r requirements.txt
 
 **Run Python analysis**
+
   python Lux_Hou_Sal.py
   
 **Open the Power BI file**  
+
 `  Lb.pbix`  
 
 # 📈 **Sample Insights**
