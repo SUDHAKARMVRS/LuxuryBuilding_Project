@@ -18,11 +18,7 @@ def clean_data(lxdf):
     lxdf.columns = lxdf.columns.str.strip().str.lower()
 
     # Convert Ticket_Price_Cr to numeric
-    lxdf['ticket_price_cr'] = (
-        lxdf['ticket_price_cr']
-        .astype(str)
-        .str.replace('₹', '', regex=False)
-        .str.replace('Cr', '', regex=False)
+    lxdf['ticket_price_cr'] = (lxdf['ticket_price_cr'].astype(str).str.replace('₹', '', regex=False).str.replace('Cr', '', regex=False)
         .str.strip()
         .astype(float)
         .round(2)
@@ -30,6 +26,7 @@ def clean_data(lxdf):
 
     # Handle missing values
     lxdf['amenity_score'] = lxdf['amenity_score'].fillna(lxdf['amenity_score'].mean())
+
     # Convert to float (invalid parsing becomes NaN)
     lxdf['ticket_price_cr'] = pd.to_numeric(lxdf['ticket_price_cr'], errors='coerce')
     lxdf['unit_size_sqft'] = pd.to_numeric(lxdf['unit_size_sqft'], errors='coerce')
@@ -38,9 +35,14 @@ def clean_data(lxdf):
     lxdf.loc[lxdf['ticket_price_cr'] < 0, 'ticket_price_cr'] = np.nan
     lxdf.loc[lxdf['unit_size_sqft'] < 0,'unit_size_sqft']= np.nan
 
+    # Replace invalid sqft & fill median
+    lxdf.loc[lxdf['unit_size_sqft'] <= 0, 'unit_size_sqft'] = np.nan
+    lxdf['unit_size_sqft'] = lxdf.groupby('configuration')['unit_size_sqft'].transform(
+        lambda x: x.fillna(x.median())
+    )
+
     # Fill NaN with median
     lxdf['ticket_price_cr'] = lxdf['ticket_price_cr'].fillna(lxdf['ticket_price_cr'].median())
-    lxdf['unit_size_sqft'] = lxdf['unit_size_sqft'].fillna(lxdf['unit_size_sqft'].median())
 
     # Clean configuration
     lxdf['configuration'] = lxdf['configuration'].str.strip().str.upper()
@@ -48,6 +50,8 @@ def clean_data(lxdf):
 
     # Market names 
     lxdf['micro_market'] = lxdf['micro_market'].str.strip().str.title()
+
+    # Fill Nan with comments
     lxdf['buyer_comments'] = lxdf['buyer_comments'].fillna('No Comments Provided.')
     # Price per sqft
     lxdf['price_per_sqft'] = (lxdf['ticket_price_cr'] * 1e7) / lxdf['unit_size_sqft'] 
@@ -55,11 +59,6 @@ def clean_data(lxdf):
     # Quarter number
     lxdf['quarter_number'] = pd.PeriodIndex(lxdf['purchase_quarter'], freq='Q').quarter 
 
-    # Replace invalid sqft & fill median
-    lxdf.loc[lxdf['unit_size_sqft'] <= 0, 'unit_size_sqft'] = np.nan
-    lxdf['unit_size_sqft'] = lxdf.groupby('configuration')['unit_size_sqft'].transform(
-        lambda x: x.fillna(x.median())
-    )
     # Decimal ratio reduction
     lxdf[['connectivity_score',
           'amenity_score','locality_infra_score']] = (lxdf[['connectivity_score','amenity_score',
@@ -75,7 +74,8 @@ def clean_data(lxdf):
             lxdf[col] = lxdf[col].astype(str).str.strip()
 
     # Booking flag: assume booked if purchase_quarter is not null/empty
-    lxdf['booking_flag'] = lxdf['purchase_quarter'].apply(lambda x: 0 if pd.isna(x) or x.strip() == '' else 1)
+    lxdf['booking_flag'] = lxdf['transaction_type'].apply(lambda x: 0 if pd.isna(x) or 
+                                                          str(x).strip().lower() == 'secondary' else 1)
 
     return lxdf
 
