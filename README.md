@@ -43,7 +43,7 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 - Removed currency symbols from Ticket_Price_Cr.
 - Handled missing values (mean/median imputation).
 - Normalized text fields (lowercase, trimmed spaces).
-- Standardized Configuration (e.g., 3BHK → 3 BHK).
+- Standardized Configuration (e.g., 3bhk,3BHK → 3 BHK).
 - Corrected invalid Unit_Size_Sqft.
 
 #### Feature Engineering
