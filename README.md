@@ -35,31 +35,31 @@ Includes project details: builder, price, configuration, locality, scores (ameni
 
 #### Data Ingestion
 
-  Source: Luxury_Housing_Bangalore.csv
-  Loaded into Python using Pandas.
+ - Source: Luxury_Housing_Bangalore.csv
+ - Loaded into Python using Pandas.
 
 #### Data Cleaning (Python)
 
-  Removed currency symbols from Ticket_Price_Cr.
-  Handled missing values (mean/median imputation).
-  Normalized text fields (lowercase, trimmed spaces).
-  Standardized Configuration (e.g., 3BHK → 3 BHK).
-  Corrected invalid Unit_Size_Sqft.
+- Removed currency symbols from Ticket_Price_Cr.
+- Handled missing values (mean/median imputation).
+- Normalized text fields (lowercase, trimmed spaces).
+- Standardized Configuration (e.g., 3BHK → 3 BHK).
+- Corrected invalid Unit_Size_Sqft.
 
 #### Feature Engineering
   
-  Price_per_Sqft = (Ticket_Price_Cr * 1e7) / Unit_Size_Sqft
-  Quarter_Number extracted from Purchase_Quarter.
-  Booking_Flag → 1 if Primary Booked, else 0.
+ - Price_per_Sqft = (Ticket_Price_Cr * 1e7) / Unit_Size_Sqft
+ - Quarter_Number extracted from Purchase_Quarter.
+ - Booking_Flag → 1 if Primary Booked, else 0.
 
 ### SQL Storage
-  Cleaned dataset pushed into PostgreSQL.
-  Table: luxury_housing_sales.
+ - Cleaned dataset pushed into PostgreSQL.
+ - Table: luxury_housing_sales.
 
 #### Power BI Visualization
-  Direct connection to PostgreSQL.
-  Built visuals: KPIs, Bar/Line/Scatter/Donut charts.
-  DAX measures created for revenue, price, amenity, booking conversion.
+ - Direct connection to PostgreSQL.
+ - Built visuals: KPIs, Bar/Line/Scatter/Donut charts.
+ - DAX measures created for revenue, price, amenity, booking conversion.
   
 ## 🚀 How to Run  
 
